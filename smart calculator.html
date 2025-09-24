@@ -93,7 +93,7 @@
           const product = nums.reduce((acc, val) => acc * val, 1);
           resultDiv.textContent = "Result: " + product;
         } else {
-          resultDiv.textContent = "❌ Invalid list input.";
+          resultDiv.textContent = " Invalid list input.";
         }
       }
 
@@ -111,26 +111,27 @@
             result = a * b;
             break;
           case "/":
-            result = b === 0 ? "❌ Cannot divide by zero!" : a / b;
+            result = b === 0 ? " Cannot divide by zero!" : a / b;
             break;
           case "%":
-            result = b === 0 ? "❌ Modulo by zero not allowed!" : a % b;
+            result = b === 0 ? "Modulo by zero not allowed!" : a % b;
             break;
           case "**":
             result = a ** b;
             break;
           default:
-            result = "❌ Unsupported operator.";
+            result = " Unsupported operator.";
         }
         resultDiv.textContent = "Result: " + result;
       }
 
       // Case 3: Invalid input
       else {
-        resultDiv.textContent = "❌ Please enter valid inputs.";
+        resultDiv.textContent = "Please enter valid inputs.";
       }
     }
   </script>
 
 </body>
+
 </html>
